@@ -1,0 +1,50 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+.eggs/
+dist/
+build/
+pip-wheel-metadata/
+.installed.cfg
+.python-version
+
+# Virtual envs
+.venv/
+venv/
+env/
+ENV/
+
+# Testing / typing
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_convert/
+# keep notebooks in notebooks/, strip outputs via pre-commit
+
+# Data / artifacts
+data/
+artifacts/
+artifacts/**/*
+runs/
+figures/
+logs/
+
+# Config/cache
+*.log
+*.tmp
+*.cache
