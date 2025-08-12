@@ -1,0 +1,4 @@
+name: chen_ueta
+params:
+  T: 20000
+  dt: 0.01
