@@ -1,6 +1,3 @@
-### `README.md`
-
-````markdown
 # Topologically Informed Echo State Networks via Poincaré Return Maps
 
 **Poincaré-Section Reservoirs (PSR)** is a geometry-driven reservoir computing library that builds the recurrent graph **directly from data** via Poincaré return maps. It provides a clean, modular implementation with end-to-end experiments, plotting, and tests.
@@ -12,7 +9,7 @@
 > *Affiliation:* Machine Intelligence Lab, Dept. of CSE, IIT Roorkee, India  
 > *Contact:* pradeep.cs@sric.iitr.ac.in
 
----
+
 
 ## Why PSR?
 
@@ -29,7 +26,7 @@ Each neuron corresponds to a concrete region on the attractor; each edge weight 
 
 **Practice (paper):** With a once-trained linear/quadratic readout, a 300-node PSR competitively extends valid prediction time on Lorenz, Rössler, Chen–Ueta, and related chaotic benchmarks—without hyper-parameter sweeps. (See the paper for complete protocol and statistics.)
 
----
+
 
 ## Features
 
@@ -41,7 +38,7 @@ Each neuron corresponds to a concrete region on the attractor; each edge weight 
 - **Metrics**: NRMSE, VPT, horizon-wise evaluation; **Viz**: overlays, phase portraits, eigenspectra, section plots.
 - **Reproducible pipeline** with YAML configs and a simple CLI.
 
----
+
 
 ## Installation
 
@@ -53,7 +50,7 @@ pre-commit install
 
 **Requirements:** Python ≥ 3.9; dependencies are specified in `pyproject.toml` (NumPy, SciPy, scikit-learn, matplotlib, seaborn, PyYAML, networkx, pandas, etc.).
 
----
+
 
 ## Quickstart
 
@@ -70,7 +67,7 @@ print("NRMSE by horizon:", result.metrics)
 print("Run directory:", result.run_dir)     # figures & artifacts saved here
 ```
 
----
+
 
 ## CLI
 
@@ -96,7 +93,7 @@ psr plot --run artifacts/runs/lorenz63/<timestamped-run-dir>
 * In PSR, the effective reservoir size is `bins_u × bins_v`. With `bins=32`, the ESN ends up with $N=1024$ units.
 * The Poincaré plane defaults to a transverse plane through the mean with normal along $z$ (3-D). Adjust `model.section_rotation_deg` and `model.sections` for a small ensemble.
 
----
+
 
 ## Minimal API Sketch
 
@@ -111,7 +108,7 @@ from psr.readout import RidgeReadout
 * `RidgeReadout.fit(states, targets).predict(states)` handles the linear readout.
 * `psr.viz` contains convenience plotting for overlays, eigenspectra, and section diagnostics.
 
----
+
 
 ## Repository Layout
 
@@ -133,7 +130,7 @@ tests/         # pytest unit tests
 artifacts/     # runs & figures (gitignored)
 ```
 
----
+
 
 ## Reproducibility
 
@@ -141,7 +138,7 @@ artifacts/     # runs & figures (gitignored)
 * **Artifacts:** Every run creates a timestamped directory under `artifacts/runs/<dataset>/...` containing configs, predictions (`.npz`), and figures (`.png`).
 * **Testing:** Run `pytest -q` from the repo root.
 
----
+
 
 ## Citing
 
@@ -169,7 +166,7 @@ If this software or its ideas are useful in your work, please cite:
   under review at Neural Networks (Elsevier), 2025.
   ```
 
----
+
 
 ## License
 
