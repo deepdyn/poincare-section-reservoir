@@ -1,0 +1,4 @@
+ridge_alpha: 0.001
+washout: 500
+closed_loop: false
+seed: 0
