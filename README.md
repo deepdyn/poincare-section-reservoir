@@ -1,7 +1,3 @@
-Here’s a polished, professional `README.md` you can drop in. It aligns with your repo structure, clarifies the method and theory, and fixes the CLI examples to match the scaffolded `psr` tool.
-
----
-
 ### `README.md`
 
 ````markdown
