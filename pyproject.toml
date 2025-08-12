@@ -1,0 +1,81 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "psr"
+version = "0.1.0"
+description = "Poincaré Section Reservoirs (PSR): geometry-inspired reservoir computing."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT License" }
+authors = [
+  { name = "Pradeep Singh", email = "pradeep.cs@sric.iitr.ac.in" },
+]
+keywords = [
+  "reservoir computing", "echo state networks", "poincare section",
+  "chaos", "dynamical systems"
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Scientific/Engineering :: Information Analysis"
+]
+
+dependencies = [
+  "numpy>=1.22",
+  "scipy>=1.10",
+  "scikit-learn>=1.2",
+  "matplotlib>=3.7",
+  "seaborn>=0.12",
+  "PyYAML>=6.0",
+  "networkx>=3.0",
+  "pandas>=1.5"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.0",
+  "pytest-cov>=4.0",
+  "pre-commit>=3.0",
+  "nbstripout>=0.6.1",
+  "ruff>=0.5.0",
+  "black>=24.3.0",
+  "isort>=5.12.0",
+  "mypy>=1.7.0",
+  "types-PyYAML"
+]
+
+[project.urls]
+Homepage = "https://github.com/deepdyn/poincare-section-reservoir"
+Issues = "https://github.com/deepdyn/poincare-section-reservoir/issues"
+
+[project.scripts]
+psr = "psr.pipelines.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["psr*"]
+
+[tool.black]
+line-length = 100
+target-version = ["py39"]
+
+[tool.isort]
+profile = "black"
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501"]
+target-version = "py39"
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
