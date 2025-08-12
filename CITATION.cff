@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Poincaré Section Reservoirs (PSR)"
+version: "0.1.0"
+date-released: "2025-08-12"
+type: software
+authors:
+  - family-names: "Singh"
+    given-names: "Pradeep"
+    email: "pradeep.cs@sric.iitr.ac.in"
+repository-code: "https://github.com/deepdyn/poincare-section-reservoir"
+license: "MIT"
+keywords:
+  - reservoir computing
+  - echo state networks
+  - Poincaré section
+  - chaotic systems
+  - dynamical systems
+  - geometry-inspired ML
+preferred-citation:
+  type: software
+  title: "Poincaré Section Reservoirs (PSR)"
+  authors:
+    - family-names: "Singh"
+      given-names: "Pradeep"
+  version: "0.1.0"
+  date-released: "2025-08-12"
+  url: "https://github.com/deepdyn/poincare-section-reservoir"
