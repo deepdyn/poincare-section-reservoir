@@ -1,0 +1,25 @@
+dataset:
+  name: lorenz63
+  params:
+    T: 20000
+    dt: 0.01
+
+model:
+  reservoir_size: 300     # (currently informative; ESN size set by bins^2)
+  leak: 0.3
+  spectral_radius: 0.9
+  input_scale: 1.0
+  sections: 1
+  section_rotation_deg: 5.0
+  bins: 32
+  activation: tanh
+
+train:
+  ridge_alpha: 0.001
+  washout: 500
+  closed_loop: true
+  seed: 0
+
+eval:
+  horizons: [200, 400, 800]
+artifacts_dir: artifacts
