@@ -5,7 +5,7 @@
 > **Research status.** This software accompanies the paper  
 > **“Topologically Informed Echo State Networks via Poincaré Return Maps for Chaotic Time-Series”** (under review at *Neural Networks*, Elsevier).  
 > *Short title:* Topologically Informed Reservoirs.  
-> *Authors:* Pradeep Singh\* (corresponding), Ashutosh Kumar, Sutirtha Ghosh, Balasubramanian Raman  
+> *Authors:* Pradeep Singh, Ashutosh Kumar, Sutirtha Ghosh, Balasubramanian Raman  
 > *Affiliation:* Machine Intelligence Lab, Dept. of CSE, IIT Roorkee, India  
 > *Contact:* pradeep.cs@sric.iitr.ac.in
 
@@ -161,7 +161,7 @@ If this software or its ideas are useful in your work, please cite:
 * **Paper (under review)**
 
   ```
-  Singh, P.*, Kumar, A., Ghosh, S., Raman, B.
+  Singh, P., Kumar, A., Ghosh, S., Raman, B.
   "Topologically Informed Echo State Networks via Poincaré Return Maps for Chaotic Time-Series",
   under review at Neural Networks (Elsevier), 2025.
   ```
