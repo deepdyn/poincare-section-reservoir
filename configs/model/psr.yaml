@@ -1,0 +1,8 @@
+reservoir_size: 300
+leak: 0.3
+spectral_radius: 0.9
+input_scale: 1.0
+sections: 1
+section_rotation_deg: 5.0
+bins: 32
+activation: tanh
