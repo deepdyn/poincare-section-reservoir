@@ -1,0 +1,4 @@
+name: lorenz63
+params:
+  T: 20000
+  dt: 0.01
