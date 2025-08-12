@@ -15,10 +15,10 @@
 
 Classical Echo State Networks (ESNs) draw a random sparse recurrent matrix \(W\) and tune only the readout. PSR replaces that heuristic with a **topologically informed** construction:
 
-1. Slice a single trajectory \(x_t\) by a transverse hyperplane (Poincaré section) to obtain a sequence of **return points** on the plane.
+1. Slice a single trajectory by a transverse hyperplane (Poincaré section) to obtain a sequence of **return points** on the plane.
 2. **Coarse-grain** those points into bins/symbols on the section.
 3. Compute **empirical transition frequencies** between successive symbols to form a row-stochastic matrix \(T\).
-4. **Spectrally rescale** \(T\) to target radius \(\rho\) to obtain the reservoir adjacency \(W\).
+4. **Spectrally rescale** \(T\) to target spectral radius to obtain the reservoir adjacency \(W\).
 
 Each neuron corresponds to a concrete region on the attractor; each edge weight reflects an observed return probability—yielding a lean, interpretable reservoir without gradient training or equation knowledge.
 
