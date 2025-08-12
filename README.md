@@ -170,7 +170,7 @@ If this software or its ideas are useful in your work, please cite:
 
 ## License
 
-MIT License — see `LICENSE`.
+Apache License — see `LICENSE`.
 
 ---
 
